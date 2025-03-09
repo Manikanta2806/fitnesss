@@ -7,7 +7,7 @@ function SubscriptionPage({ userId }) {
     // Function to handle subscription click
     const handleSubscription = async (plan) => {
         try {
-            const response = await axios.post('http://localhost:4000/api/subscriptions/apply-subscription', {
+            const response = await axios.post('https://fitnesss-z2nb.onrender.com/api/subscriptions/apply-subscription', {
                 userId,
                 plan
             });

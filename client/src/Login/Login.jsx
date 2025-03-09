@@ -15,7 +15,7 @@ export default function Login() {
   function handleLogin(e) {
     e.preventDefault();
 
-    axios.post('http://localhost:4000/api/auth/login', formData)
+    axios.post('https://fitnesss-z2nb.onrender.com/api/auth/login', formData)
       .then((res) => {
         console.log('Login response', res);
 

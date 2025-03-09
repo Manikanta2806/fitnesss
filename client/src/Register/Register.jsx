@@ -27,7 +27,7 @@ export default function Register() {
         setError('');
 
         // Make the POST request to register the user
-        axios.post("http://localhost:4000/api/auth/signup", formData)
+        axios.post("https://fitnesss-z2nb.onrender.com/api/auth/signup", formData)
             .then((res) => {
                 console.log("response from register", res);
                 

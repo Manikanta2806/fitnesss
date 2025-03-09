@@ -9,7 +9,7 @@ function TrainerUsersList({ trainerId }) {
         // Fetch users under the trainer on component mount
         const fetchUsers = async () => {
             try {
-                const response = await axios.get(`http://localhost:4000/api/users_under_trainer/${trainerId}`);
+                const response = await axios.get(`https://fitnesss-z2nb.onrender.com/api/users_under_trainer/${trainerId}`);
                 setUsers(response.data.users); // Set the list of users
                 setMessage(response.data.message); // Set the message (like success or no users)
             } catch (error) {
